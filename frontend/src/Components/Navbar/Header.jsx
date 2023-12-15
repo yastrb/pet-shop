@@ -94,10 +94,15 @@ export function StickyNavbar() {
                                 }}
                             />
                         </div>
+                        {/* Icons */}
+                        <CircumIcon name="user"/>
+                        <CircumIcon name="heart"/>
                         <CircumIcon name="shopping_cart"/>
+
+
                         {/* Auth */}
 
-                        <div className="flex items-center gap-x-1">
+                        {/* <div className="flex items-center gap-x-1">
                             <Button
                                 variant="text"
                                 size="sm"
@@ -112,7 +117,7 @@ export function StickyNavbar() {
                             >
                                 <span>Sign in</span>
                             </Button>
-                        </div>
+                        </div> */}
 
 
                         <IconButton
@@ -156,14 +161,6 @@ export function StickyNavbar() {
                 </div>
                 <MobileNav open={openNav}>
                     {navList}
-                    <div className="flex items-center gap-x-1">
-                        <Button fullWidth variant="text" size="sm" className="">
-                            <span>Log In</span>
-                        </Button>
-                        <Button fullWidth variant="gradient" size="sm" className="">
-                            <span>Sign in</span>
-                        </Button>
-                    </div>
                 </MobileNav>
             </Navbar>
         </div>
