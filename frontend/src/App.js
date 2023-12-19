@@ -1,15 +1,16 @@
 import {  Routes, Route} from 'react-router-dom';
-import { FooterWithSocialLinks } from "./Components/Footer/Footer";
+
 import { StickyNavbar } from "./Components/Header/Header";
 import Main from './Pages/Main';
 import CategoryPage from './Pages/CategoryPage';
 import Cart from './Pages/Cart';
 import LoginSignUp from './Pages/LoginSignUp';
 import WishList from './Pages/WishList';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-      <div className=" wrapper min-h-full flex flex-col ">
+      <div className=" wrapper min-h-full flex flex-col font-norms ">
         <StickyNavbar></StickyNavbar>
         <div className=' main flex-auto my-5'>
         <Routes>
@@ -26,7 +27,8 @@ function App() {
           <Route path="/cart" element={<Cart/>} />
         </Routes>
         </div>
-        <FooterWithSocialLinks></FooterWithSocialLinks>
+        <Footer/>
+        {/* <FooterWithSocialLinks></FooterWithSocialLinks> */}
       </div>
   );
 }

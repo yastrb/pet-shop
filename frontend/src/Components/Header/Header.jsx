@@ -1,6 +1,7 @@
 ﻿import React from "react";
 import CircumIcon from "@klarr-agency/circum-icons-react";
 import { DefaultImg } from "./Logo";
+import LogoHeader from "../Assets/Images/logo.svg"
 import Navlist from "./Navlist";
 import {
     Navbar,
@@ -27,7 +28,7 @@ export function StickyNavbar() {
             <Navbar className="sticky top-0 z-10 h-max mx-auto rounded-none py-2 lg:py-4">
                 <div className="flex items-center justify-between text-blue-gray-900 xl:max-w-[1160px] mx-auto ">
                     <NavLink to="/">
-                        <DefaultImg />
+                        <DefaultImg logo={LogoHeader} />
                     </NavLink>
 
                     <div className="flex items-center gap-4">

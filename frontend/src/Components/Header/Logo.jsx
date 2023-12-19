@@ -1,9 +1,9 @@
-﻿import logo from "../Assets/Images/Main-Logo.svg"
-export function DefaultImg() {
+﻿
+export function DefaultImg(props) {
     return (
         <img
-            className="h-[100px]  object-cover object-center"
-            src={logo}
+            className=""
+            src={props.logo}
             alt="logoimage"
         />
     );

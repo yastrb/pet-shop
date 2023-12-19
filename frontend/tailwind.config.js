@@ -4,7 +4,14 @@ module.exports =withMT({
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#011240',
+      },
+      fontFamily: {
+        norms: ["NORMS", 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }) ;
