@@ -6,8 +6,6 @@ import Navlist from "./Navlist";
 import {
     Navbar,
     MobileNav,
-    Typography,
-    Button,
     IconButton,
     Input,
 } from "@material-tailwind/react";
@@ -62,8 +60,6 @@ export function StickyNavbar() {
                         <NavLink to="/cart">
                             <CircumIcon name="shopping_cart" />
                         </NavLink>
-
-
                         <IconButton
                             variant="text"
                             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
