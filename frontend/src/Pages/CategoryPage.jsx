@@ -2,7 +2,11 @@
 
 const CategoryPage = () => {
   return (
-    <div>CategoryPage</div>
+    <div>
+      <h1>CategoryPage</h1>
+      <div>Image</div>
+    </div>
+    
   )
 }
 
